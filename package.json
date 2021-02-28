@@ -1,0 +1,21 @@
+{
+  "name": "multistepform",
+  "version": "1.0.0",
+  "description": "'Multiple Step Form'",
+  "main": "index.html",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch",
+    "parcel": "parcel index.html"
+  },
+  "author": "Saurabh Singh",
+  "license": "ISC",
+  "dependencies": {
+    "intl-tel-input": "^17.0.12",
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-nightly.486"
+  }
+}

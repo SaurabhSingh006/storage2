@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <title>Galderma</title>
+  <!-- Linking Styling files -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Linking JS files -->
+  <script defer="" src="./js/index.js"></script>
+
+  <!-- Importing Poppins fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <form action="" class="form">
+      <!-- PROGRESS BAR -->
+      <div class="form__progress-bar">
+        <div class="form__step">
+          <div class="form__step--number">1</div>
+          <div class="form__step--value">General Info</div>
+        </div>
+        <div class="form__step">
+          <div class="form__step--number">2</div>
+          <div class="form__step--value">Contact details</div>
+        </div>
+        <div class="form__step">
+          <div class="form__step--number">3</div>
+          <div class="form__step--value">Family details</div>
+        </div>
+        <div class="form__step">
+          <div class="form__step--number">4</div>
+          <div class="form__step--value">Emergency contact</div>
+        </div>
+        <div class="form__step">
+          <div class="form__step--number">5</div>
+          <div class="form__step--value">Banking details</div>
+        </div>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="form__slider">
+        <!-- General Information -->
+        <div class="form__slide">
+          <div class="form__title">General Information</div>
+
+          <div class="form__field">
+            <input name="fullName" id="fullName" type="text" class="form__input" placeholder="Full Name" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>
+            <label for="fullName" class="form__label">Full Name</label>
+          </div>
+
+          <div class="form__grid-container3">
+            <!-- gender -->
+            <div class="form__field">
+              <input list="listGender" name="gender" id="gender" type="text" class="form__input" placeholder="Gender" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" required>  
+              <label for="gender" class="form__label">Gender</label>
+              <datalist id="listGender">
+                <option value="Male"></option>
+                <option value="Female"></option>
+              </datalist>
+            </div>
+
+            <!-- Nationality -->
+            <div class="form__field">
+              <input name="nationality" id="nationality" type="text" class="form__input" placeholder="Nationality" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>  
+              <label for="nationality" class="form__label">Nationality</label>
+            </div>   
+
+            <!-- Date of Birth -->
+            <div class="form__field"> 
+              <input name="dateOfBirth" id="dateOfBirth" type="text" class="form__input input__date" placeholder="Date of Birth" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" required>  
+              <label for="dateOfBirth" class="form__label">Date of Birth</label>
+            </div> 
+            
+            <!-- Location -->
+            <div class="form__field">
+              <input name="location" id="location" type="text" class="form__input" placeholder="Location" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>  
+              <label for="location" class="form__label">Location</label>
+            </div>
+
+            <!-- Position -->
+            <div class="form__field">    
+              <input name="position" id="position" type="text" class="form__input" placeholder="Position" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>  
+              <label for="position" class="form__label">Position</label>
+            </div>
+
+            <!-- Date of Hire -->
+            <div class="form__field">
+              <input name="dateOfHire" id="dateOfHire" type="text" class="form__input input__date" placeholder="Date of Hire" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" required>  
+              <label for="dateOfHire" class="form__label">Date of Hire</label>
+            </div>
+          </div>
+
+          <div class="form__grid-container2">
+            <div class="form__field">
+              <input name="uaeLabourCard" id="uaeLabourCard" type="text" class="form__input" placeholder="UAE Labour Card" pattern="^\S*$" title="Space can't be allowed in this field" required>  
+              <label for="uaeLabourCard" class="form__label">UAE Labour Card</label>
+            </div>
+
+            <div class="form__field">
+              <input name="passport" id="passport" type="text" class="form__input" placeholder="Passport" pattern="^\S*$" title="Space can't be allowed in this field" required>  
+              <label for="passport" class="form__label">Passport</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="form__slide">
+          <div class="form__title">Contact Information</div>
+
+          <div class="form__field">
+            <input name="homeAddress" id="homeAddress" type="text" class="form__input" placeholder="Home Country Address" pattern="^[A-Za-z0-9 ]+$" title="Special characters can't be allowed" required> 
+            <label for="homeAddress" class="form__label">Home Country Address</label>
+          </div>
+
+          <div class="form__field">
+            <input name="uaeAddress" id="uaeAddress" type="text" class="form__input" placeholder="UAE Address" pattern="^[A-Za-z0-9 ]+$" title="Special characters can't be allowed" required> 
+            <label for="uaeAddress" class="form__label">UAE Address</label>
+          </div>
+
+          <div class="form__grid-container2">
+            <div class="form__field"> 
+              <input name="homePhone" id="homePhone" type="tel" class="form__input phone" placeholder="Home Country Phone" pattern="^[0-9]*$" maxlength="10" minlength="10" title="Must contains only number" required> 
+              <label for="homePhone" class="form__label">Home Country Phone</label>
+            </div> 
+
+            <div class="form__field">
+              <input name="uaePhone" id="uaePhone" type="tel" class="form__input phone" placeholder="UAE Home Phone" pattern="^[0-9]*$" maxlength="10" minlength="10" title="Must contains only number" required> 
+              <label for="uaePhone" class="form__label">UAE Home Phone</label>  
+            </div>
+
+            <div class="form__field">
+              <input name="uaeMobile" id="uaeMobile" type="tel" class="form__input phone" placeholder="UAE Mobile Phone" pattern="^[0-9]*$" maxlength="10" minlength="10" title="Must contains only number" required> 
+              <label for="uaeMobile" class="form__label">UAE Mobile Phone</label>
+            </div>
+
+            <div class="form__field">
+              <input name="emailAddress" id="emailAddress" type="text" class="form__input" placeholder="Email Address" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="Please enter valid email address!" required> 
+              <label for="emailAddress" class="form__label">Email Address</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Info -->
+        <div class="form__slide"> 
+          <div class="form__title">Family details</div>
+
+          <div class="form__grid-container2">
+            <div class="form__field">
+              <input list="maritialList" name="maritial" id="maritial" type="text" class="form__input" placeholder="Maritial Status" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" required> 
+              <label for="maritial" class="form__label">Maritial Status</label>
+              <datalist id="maritialList">
+                <option value="Maried"></option>
+                <option value="Single"></option>
+              </datalist>
+            </div>
+
+            <div class="form__field">
+              <input list="childList" name="children" id="children" type="text" class="form__input" placeholder="Children" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" required> 
+              <label for="children" class="form__label">Children</label>
+              <datalist id="childList">
+                <option value="Yes"></option>
+                <option value="No"></option>
+              </datalist>
+            </div>
+
+            <div class="form__field">
+              <input name="spouseName" id="spouseName" type="text" class="form__input" placeholder="Spouse's Name" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contain only alphabets & space" required> 
+              <label for="spouseName" class="form__label">Spouse's Name</label>
+            </div>
+
+            <div class="form__field">
+              <input name="spouseOccu" id="spouseOccu" type="text" class="form__input" placeholder="Spouse's Occupation" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contain only alphabets & space" required> 
+              <label for="spouseOccu" class="form__label">Spouse's Occupation</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Info -->
+        <div class="form__slide" "="">
+          <div class="form__title">Emergency details</div>
+
+          <div class="form__grid-container2">
+            <div class="form__field">
+              <input name="eName" id="eName" type="text" class="form__input" placeholder="Name" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>
+              <label for="eName" class="form__label">Name</label>
+            </div>
+  
+            <div class="form__field">
+              <input name="relation" id="relation" type="text" class="form__input" placeholder="Relationship" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>
+              <label for="relation" class="form__label">Relationship</label>
+            </div>
+  
+            <div class="form__field">
+              <input name="eAddress" id="eAddress" type="text" class="form__input" placeholder="Address" pattern="^[A-Za-z0-9 ]+$" title="Special characters can't be allowed" required> 
+              <label for="eAddress" class="form__label">Address</label>
+            </div>
+  
+            <div class="form__field">
+              <input name="ePhone" id="ePhone" type="tel" class="form__input phone" placeholder="Phone" pattern="^[0-9]*$" maxlength="10" minlength="10" title="Must contains only number" required>   
+              <label for="ePhone" class="form__label">Phone</label>
+            </div> 
+          </div>
+        </div>
+
+        <!-- Bank info -->
+        <div class="form__slide">
+          <div class="form__title">Bank details</div>
+
+          <div class="form__grid-container2">
+            <div class="form__field">
+              <input name="bankName" id="bankName" type="text" class="form__input" placeholder="Bank Name" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>
+              <label for="bankName" class="form__label">Bank Name</label>
+            </div>
+
+            <div class="form__field">
+              <input name="branch" id="branch" type="text" class="form__input" placeholder="Branch" pattern="^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$" title="Must contains only alphabets and space." required>
+              <label for="branch" class="form__label">Branch</label>
+            </div>
+
+            <div class="form__field">
+              <input name="account" id="account" type="text" class="form__input" placeholder="Account" pattern="^\S*$" title="Space can't be allowed in this field" required>  
+              <label for="account" class="form__label">Account</label>
+            </div>
+
+            <div class="form__field">
+              <input name="iban" id="iban" type="text" class="form__input" placeholder="IBAN" pattern="^\S*$" title="Space can't be allowed in this field" required>  
+              <label for="iban" class="form__label">IBAN</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="form__button-contain">
+        <button class="form__button next">Next</button>
+        <button class="form__button prev">Previous</button> 
+      </div>
+    </form>
+  </div>
+</body>
+</html>
